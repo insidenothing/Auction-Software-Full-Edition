@@ -3,7 +3,6 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -15,16 +14,26 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
+
+
+
+
+
 public class HelloAndroid extends Activity {
    /** Called when the activity is first created. */
-   @SuppressWarnings("null")
-@Override
+   
+
+
+
+
+
+
+
    public void onCreate(Bundle savedInstanceState) {
 	   
 	   
@@ -32,26 +41,29 @@ public class HelloAndroid extends Activity {
 	   
 	   
 	   String result = "";
+	   InputStream is = null;
 	   //the year data to send
 	   ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
 	   nameValuePairs.add(new BasicNameValuePair("year","1980"));
 	   //http post
 	   try{
-	 		  HttpClient httpclient = new DefaultHttpClient();
+		   
+		   HttpClient httpclient = new DefaultHttpClient();
 	 		  HttpPost httppost = new HttpPost("http://209.251.35.217/getAllPeopleBornAfter.php");
 	 		  httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 	 		  HttpResponse response = httpclient.execute(httppost);
 	 		  HttpEntity entity = response.getEntity();
-	 		  @SuppressWarnings("unused")
-			InputStream is = entity.getContent();
+			is = entity.getContent();
 	   }catch(Exception e){
 	 		  Log.e("log_tag", "Error in http connection "+e.toString());
 	   }
 	   //convert response to string
 	   try{
-	 		  InputStream is = null;
+	 		 
+			
 			BufferedReader reader = new BufferedReader(new InputStreamReader(is,"iso-8859-1"),8);
-	 		  StringBuilder sb = new StringBuilder();
+	 		
+			StringBuilder sb = new StringBuilder();
 	 		  String line = null;
 	 		  while ((line = reader.readLine()) != null) {
 	 				  sb.append(line + "\n");

@@ -18,28 +18,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
-
-
-
-
-
-
 public class HelloAndroid extends Activity {
    /** Called when the activity is first created. */
-   
-
-
-
-
-
-
-
    public void onCreate(Bundle savedInstanceState) {
-	   
-	   
-	   
-	   
-	   
 	   String result = "";
 	   InputStream is = null;
 	   //the year data to send
@@ -47,7 +28,6 @@ public class HelloAndroid extends Activity {
 	   nameValuePairs.add(new BasicNameValuePair("year","1980"));
 	   //http post
 	   try{
-		   
 		   HttpClient httpclient = new DefaultHttpClient();
 	 		  HttpPost httppost = new HttpPost("http://209.251.35.217/getAllPeopleBornAfter.php");
 	 		  httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
@@ -59,10 +39,7 @@ public class HelloAndroid extends Activity {
 	   }
 	   //convert response to string
 	   try{
-	 		 
-			
 			BufferedReader reader = new BufferedReader(new InputStreamReader(is,"iso-8859-1"),8);
-	 		
 			StringBuilder sb = new StringBuilder();
 	 		  String line = null;
 	 		  while ((line = reader.readLine()) != null) {
@@ -75,26 +52,21 @@ public class HelloAndroid extends Activity {
 	   }
 	   //parse json data
 	   try{
+			  super.onCreate(savedInstanceState);
+		      TextView tv = new TextView(this);
 	 		  JSONArray jArray = new JSONArray(result);
 	 		  for(int i=0;i<jArray.length();i++){
 	 				  JSONObject json_data = jArray.getJSONObject(i);
+	 			      tv.setText("Pull data from MySQL "+json_data.getString("name"));
 	 				  Log.i("log_tag","id: "+json_data.getInt("id")+
 	 						  ", name: "+json_data.getString("name")+
 	 						  ", sex: "+json_data.getInt("sex")+
 	 						  ", birthyear: "+json_data.getInt("birthyear")
 	 				  );
 	 		  }
+		      setContentView(tv); 
 	   }catch(JSONException e){
 	 		  Log.e("log_tag", "Error parsing data "+e.toString());
 	   }
-	   
-	   
-	   
-	   
-		  super.onCreate(savedInstanceState);
-		      TextView tv = new TextView(this);
-		      tv.setText("Pull data from MySQL...");
-		      setContentView(tv); 
-   
    }
 }

@@ -35,7 +35,7 @@ public class HelloAndroid extends Activity {
 	 		  HttpEntity entity = response.getEntity();
 			is = entity.getContent();
 	   }catch(Exception e){
-	 		  Log.e("log_tag", "Error in http connection "+e.toString());
+	 		  Log.e("patrick-code", "Error in http connection "+e.toString());
 	   }
 	   //convert response to string
 	   try{
@@ -48,7 +48,7 @@ public class HelloAndroid extends Activity {
 	 		  is.close();
 	 		  result=sb.toString();
 	   }catch(Exception e){
-	 		  Log.e("log_tag", "Error converting result "+e.toString());
+	 		  Log.e("patrick-code", "Error converting result "+e.toString());
 	   }
 	   //parse json data
 	   try{
@@ -57,16 +57,18 @@ public class HelloAndroid extends Activity {
 	 		  JSONArray jArray = new JSONArray(result);
 	 		  for(int i=0;i<jArray.length();i++){
 	 				  JSONObject json_data = jArray.getJSONObject(i);
-	 			      tv.setText("Pull data from MySQL "+json_data.getString("name"));
-	 				  Log.i("log_tag","id: "+json_data.getInt("id")+
+	 			      tv.setText("hello android "+json_data.getString("name"));
+	 				  Log.i("patrick-code","id: "+json_data.getInt("id")+
 	 						  ", name: "+json_data.getString("name")+
 	 						  ", sex: "+json_data.getInt("sex")+
 	 						  ", birthyear: "+json_data.getInt("birthyear")
 	 				  );
 	 		  }
 		      setContentView(tv); 
+		      BuildingBlock bb = new BuildingBlock(this);
+		      
 	   }catch(JSONException e){
-	 		  Log.e("log_tag", "Error parsing data "+e.toString());
+	 		  Log.e("patrick-code", "Error parsing data "+e.toString());
 	   }
    }
 }

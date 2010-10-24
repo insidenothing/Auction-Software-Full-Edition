@@ -18,9 +18,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+//import android.widget.TextView;
 public class HelloAndroid extends Activity {
    /** Called when the activity is first created. */
    public void onCreate(Bundle savedInstanceState) {
+	   
 	   String result = "";
 	   InputStream is = null;
 	   //the year data to send
@@ -57,16 +59,25 @@ public class HelloAndroid extends Activity {
 	 		  JSONArray jArray = new JSONArray(result);
 	 		  for(int i=0;i<jArray.length();i++){
 	 				  JSONObject json_data = jArray.getJSONObject(i);
-	 			      tv.setText("hello android "+json_data.getString("name"));
+	 			      tv.setText("welcome, pulling data: "+json_data.getString("name"));
 	 				  Log.i("patrick-code","id: "+json_data.getInt("id")+
 	 						  ", name: "+json_data.getString("name")+
 	 						  ", sex: "+json_data.getInt("sex")+
 	 						  ", birthyear: "+json_data.getInt("birthyear")
 	 				  );
 	 		  }
-		      setContentView(tv); 
-		      BuildingBlock bb = new BuildingBlock(this);
+	 		  
+	 		 //setContentView(R.layout.main);
+	 		 setContentView(R.layout.welcome);
+	 		  
+		      //setContentView(tv); 
+	 		    
 		      
+		      
+		    String bbText = "passthrough data";
+			BuildingBlock bb = new BuildingBlock(bbText);
+		    
+			
 	   }catch(JSONException e){
 	 		  Log.e("patrick-code", "Error parsing data "+e.toString());
 	   }

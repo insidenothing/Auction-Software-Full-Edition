@@ -1,11 +1,22 @@
 package com.example.helloandroid;
 
+
 import android.util.Log;
 
+
+
 public class BuildingBlock {
-	public BuildingBlock(HelloAndroid helloAndroid) {
+
+
+	
+	public BuildingBlock(String passthroughString) {
 		// TODO Auto-generated constructor stub
-		Log.i("patrick-code","Ready to expand.");
+		Log.i("patrick-code","Ready to expand: "+passthroughString);
+		
+		
+		
+		
+		
 	}
 
 

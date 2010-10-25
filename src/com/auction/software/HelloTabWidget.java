@@ -1,4 +1,4 @@
-package com.example.helloandroid;
+package com.auction.software;
 
 import android.app.TabActivity;
 import android.content.Intent;

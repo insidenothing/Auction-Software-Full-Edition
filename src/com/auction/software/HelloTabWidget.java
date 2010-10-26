@@ -18,22 +18,22 @@ public class HelloTabWidget extends TabActivity {
 	    // Create an Intent to launch an Activity for the tab (to be reused)
 	    intent = new Intent().setClass(this, ArtistsActivity.class);
 	    // Initialize a TabSpec for each tab and add it to the TabHost
-	    spec = tabHost.newTabSpec("artists").setIndicator("Artists",
+	    spec = tabHost.newTabSpec("artists").setIndicator("Maps",
 	                      res.getDrawable(R.drawable.ic_tab_artists))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 	    // Do the same for the other tabs
 	    intent = new Intent().setClass(this, AlbumsActivity.class);
-	    spec = tabHost.newTabSpec("albums").setIndicator("Albums",
+	    spec = tabHost.newTabSpec("albums").setIndicator("Schedule",
 	                      res.getDrawable(R.drawable.ic_tab_albums))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 	    intent = new Intent().setClass(this, SongsActivity.class);
-	    spec = tabHost.newTabSpec("songs").setIndicator("Pull From Server",
+	    spec = tabHost.newTabSpec("songs").setIndicator("Search",
 	                      res.getDrawable(R.drawable.ic_tab_songs))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
-	    tabHost.setCurrentTab(0);
+	    tabHost.setCurrentTab(1);
 	}
 
 }

@@ -4,7 +4,6 @@ import android.app.TabActivity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TabHost;
 
 public class HelloTabWidget extends TabActivity {
@@ -34,6 +33,7 @@ public class HelloTabWidget extends TabActivity {
 	                      res.getDrawable(R.drawable.ic_tab_songs))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
-	    tabHost.setCurrentTab(2);
+	    tabHost.setCurrentTab(0);
 	}
+
 }

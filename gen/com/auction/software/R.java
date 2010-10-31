@@ -17,8 +17,8 @@ public final class R {
         public static final int ic_tab_artists=0x7f020003;
         public static final int ic_tab_songs=0x7f020004;
         public static final int icon=0x7f020005;
-        public static final int schedule_list_color=0x7f020006;
-        public static final int schedule_list_grey=0x7f020007;
+        public static final int schedule_list_color_2=0x7f020006;
+        public static final int schedule_list_grey_2=0x7f020007;
         public static final int search_list_color=0x7f020008;
         public static final int search_list_grey=0x7f020009;
     }

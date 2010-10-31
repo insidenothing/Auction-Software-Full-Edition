@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
-			package="com.auction.software" 
+			package="com.auction.software.lite" 
 			android:versionCode="3" 
 			android:versionName="1.2">
 	<application android:icon="@drawable/icon" 
 			android:label="@string/app_name" 
 			android:theme="@android:style/Theme.NoTitleBar">
-    <activity android:name=".HelloTabWidget" 
+    <activity android:name="com.auction.software.HelloTabWidget" 
     		android:label="@string/app_name" 
     		android:theme="@android:style/Theme.NoTitleBar">
 		<intent-filter>
@@ -14,9 +14,9 @@
         	<category android:name="android.intent.category.LAUNCHER" />
 		</intent-filter>
 	</activity>
-	<activity android:name="AlbumsActivity"></activity>
-	<activity android:name="ArtistsActivity"></activity>
-	<activity android:name="SongsActivity"></activity>
+	<activity android:name="com.auction.software.AlbumsActivity"></activity>
+	<activity android:name="com.auction.software.ArtistsActivity"></activity>
+	<activity android:name="com.auction.software.SongsActivity"></activity>
 </application>
 <uses-sdk android:minSdkVersion="8" />
 <uses-permission android:name="android.permission.INTERNET"></uses-permission> 

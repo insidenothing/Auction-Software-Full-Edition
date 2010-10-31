@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TabHost;
+import com.auction.software.lite.R;
 
 public class HelloTabWidget extends TabActivity {
 	

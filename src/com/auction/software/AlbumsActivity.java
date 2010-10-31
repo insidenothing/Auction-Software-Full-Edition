@@ -12,6 +12,7 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import com.auction.software.lite.R;
 
 public class AlbumsActivity extends Activity {
 	

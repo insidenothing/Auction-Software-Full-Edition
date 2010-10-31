@@ -8,9 +8,9 @@ import android.widget.TextView;
 public class ArtistsActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.i("patrick-code", "full edition holder");
+        Log.i("patrick-code", "Loaded 'Around Me Now' Tab");
         TextView textview = new TextView(this);
-        textview.setText("'Around Me Now' will be available in the full edition.");
+        textview.setText("'Around Me Now' is in development.");
         setContentView(textview);
     }
 }

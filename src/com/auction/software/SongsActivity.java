@@ -9,9 +9,9 @@ import android.widget.TextView;
 	public class SongsActivity extends Activity {
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
-	        Log.i("patrick-code", "full edition holder");
+	        Log.i("patrick-code", "Loaded Search Tab");
 	        TextView textview = new TextView(this);
-	        textview.setText("Search will be available in the full edition.");
+	        textview.setText("Search feature is in development.");
 	        setContentView(textview);
 	    }
 	}

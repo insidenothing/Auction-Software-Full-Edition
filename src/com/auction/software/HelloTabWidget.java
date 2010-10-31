@@ -18,7 +18,7 @@ public class HelloTabWidget extends TabActivity {
 	    // Create an Intent to launch an Activity for the tab (to be reused)
 	    intent = new Intent().setClass(this, ArtistsActivity.class);
 	    // Initialize a TabSpec for each tab and add it to the TabHost
-	    spec = tabHost.newTabSpec("artists").setIndicator("Maps",
+	    spec = tabHost.newTabSpec("artists").setIndicator("Around Me Now",
 	                      res.getDrawable(R.drawable.ic_tab_artists))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);

@@ -11,7 +11,7 @@ import android.widget.TextView;
 	        super.onCreate(savedInstanceState);
 	        Log.i("patrick-code", "full edition holder");
 	        TextView textview = new TextView(this);
-	        textview.setText("This will be available in the full edition.");
+	        textview.setText("Search will be available in the full edition.");
 	        setContentView(textview);
 	    }
 	}

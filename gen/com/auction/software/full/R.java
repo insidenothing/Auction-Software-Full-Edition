@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.auction.software;
+package com.auction.software.full;
 
 public final class R {
     public static final class attr {

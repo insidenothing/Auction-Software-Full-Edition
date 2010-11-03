@@ -12,9 +12,11 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
-import com.auction.software.full.R;
 
-public class AlbumsActivity extends Activity {
+import com.auction.software.pro.R;
+
+
+public class ScheduleList extends Activity {
 	
     private TextView mDateDisplay;
     private Button mPickDate;

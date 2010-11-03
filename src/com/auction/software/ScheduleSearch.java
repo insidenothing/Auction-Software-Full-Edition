@@ -6,12 +6,12 @@ import android.util.Log;
 import android.widget.TextView;
 
 
-	public class SongsActivity extends Activity {
+	public class ScheduleSearch extends Activity {
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
 	        Log.i("patrick-code", "Loaded Search Tab");
 	        TextView textview = new TextView(this);
-	        textview.setText("Search feature is in development.");
+	        textview.setText("Search will be included in the next version release. Working on it every night.");
 	        setContentView(textview);
 	    }
 	}

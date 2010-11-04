@@ -11,14 +11,12 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.TextView;
 
 import com.auction.software.pro.R;
 
 
 public class ScheduleList extends Activity {
 	
-    private TextView mDateDisplay;
     private Button mPickDate;
     private int mYear;
     private int mMonth;
@@ -30,7 +28,6 @@ public class ScheduleList extends Activity {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.date_list);
        // capture our View elements
-       mDateDisplay = (TextView) findViewById(R.id.dateDisplay);
        mPickDate = (Button) findViewById(R.id.pickDate);
        // add a click listener to the button
        mPickDate.setOnClickListener(new View.OnClickListener() {
@@ -61,12 +58,6 @@ public class ScheduleList extends Activity {
    private void updateDisplay() {
        // reset the web page to new date
        updateWeb(mMonth + 1,mDay,mYear);
-	   mDateDisplay.setText(
-           new StringBuilder()
-                   // Month is 0 based so add 1
-                   .append(mMonth + 1).append("-")
-                   .append(mDay).append("-")
-                   .append(mYear).append(" "));
    }
    
    // the callback received when the user "sets" the date in the dialog

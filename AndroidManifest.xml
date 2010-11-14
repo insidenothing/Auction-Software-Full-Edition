@@ -6,7 +6,8 @@
 	<application android:icon="@drawable/icon" 
 			android:label="@string/app_name" 
 			android:theme="@android:style/Theme.NoTitleBar">
-    <activity android:name="com.auction.software.AuctionContainer" 
+			<uses-library android:name="com.google.android.maps" />
+    <activity android:name=".SplashScreenActivity" 
     		android:label="@string/app_name" 
     		android:theme="@android:style/Theme.NoTitleBar">
 		<intent-filter>
@@ -14,12 +15,15 @@
         	<category android:name="android.intent.category.LAUNCHER" />
 		</intent-filter>
 	</activity>
-	<activity android:name="com.auction.software.ScheduleList"></activity>
-	<activity android:name="com.auction.software.ScheduleMap"></activity>
-	<activity android:name="com.auction.software.ScheduleSearch"></activity>
+	<activity android:name=".AuctionContainer"></activity>	
+	<activity android:name=".ScheduleList"></activity>
+	<activity android:name=".ScheduleMap"></activity>
+	<activity android:name=".ScheduleSearch"></activity>
 </application>
 <uses-sdk android:minSdkVersion="4" />
 <uses-permission android:name="android.permission.INTERNET"></uses-permission> 
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission> 
 <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission> 
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
 </manifest> 

@@ -1,4 +1,4 @@
-package com.auction.software;
+package com.auction.software.pro;
 
 import android.app.TabActivity;
 import android.content.Intent;
@@ -41,7 +41,7 @@ public class AuctionContainer extends TabActivity {
 	                      res.getDrawable(R.drawable.tab_search))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
-	    tabHost.setCurrentTab(1);
+	    tabHost.setCurrentTab(0);
 	}
 
 }

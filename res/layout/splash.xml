@@ -6,5 +6,5 @@
 	android:gravity="center" android:background="#6B8AAD">
 	<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
 		android:layout_height="wrap_content" android:textSize="18sp"
-		android:textStyle="bold" android:textColor="#fff" android:text="Splash Screen"></TextView>
+		android:textStyle="bold" android:textColor="#fff" android:text="Auctions Pro by Patrick McGuire"></TextView>
 </LinearLayout>

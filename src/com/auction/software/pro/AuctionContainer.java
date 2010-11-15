@@ -8,10 +8,12 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TabHost;
 
-import com.auction.software.pro.R;
-
 
 public class AuctionContainer extends TabActivity {
+	
+
+
+
 	
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
@@ -41,7 +43,10 @@ public class AuctionContainer extends TabActivity {
 	                      res.getDrawable(R.drawable.tab_search))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
-	    tabHost.setCurrentTab(0);
+	    tabHost.setCurrentTab(1);
 	}
+	
 
-}
+	
+	 }
+

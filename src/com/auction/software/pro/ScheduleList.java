@@ -7,17 +7,21 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.webkit.WebView;
-import android.widget.Button;
 import android.widget.DatePicker;
-
-import com.auction.software.pro.R;
 
 
 public class ScheduleList extends Activity {
 	
-    private Button mPickDate;
+	public boolean onCreateOptionsMenu(Menu menu){
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.menu, menu);
+		return true;
+		}	
+
     private int mYear;
     private int mMonth;
     private int mDay;
@@ -27,15 +31,6 @@ public class ScheduleList extends Activity {
    public void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.date_list);
-       // capture our View elements
-       mPickDate = (Button) findViewById(R.id.pickDate);
-       // add a click listener to the button
-       mPickDate.setOnClickListener(new View.OnClickListener() {
-           public void onClick(View v) {
-        	   showDialog(DATE_DIALOG_ID);
-           }
-       });
-       // get the current date
        final Calendar c = Calendar.getInstance();
        mYear = c.get(Calendar.YEAR);
        mMonth = c.get(Calendar.MONTH);
@@ -83,4 +78,19 @@ public class ScheduleList extends Activity {
                }
                return null;
            }
+
+           public boolean onOptionsItemSelected(MenuItem item)
+    	   {
+    	
+    	     if (item.hasSubMenu() == false)
+    	     {
+    	  
+    	    	 Log.i("patrick-debug", "Menu Command: "+item.getTitle());
+    	    	 if (item.getTitle().equals("Change date"))
+    	    		Log.i("patrick-debug", "process date change.");	 
+    	    	    showDialog(DATE_DIALOG_ID);
+    	         }
+    	    	 	   
+    	     return true;
+    	   }
 }

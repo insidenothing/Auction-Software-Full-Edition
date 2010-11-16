@@ -10,7 +10,7 @@
 			android:textStyle="bold" 
 			android:textColor="#fff" 
 			android:gravity="center"
-			android:text="Auctions Pro"></TextView>
+			android:text="Auction Master"></TextView>
 <TextView android:id="@+id/TextView02" 
 			android:layout_width="wrap_content"
 			android:layout_height="200sp" 
@@ -18,7 +18,7 @@
 			android:textStyle="bold" 
 			android:textColor="#fff" 
 			android:gravity="center"
-			android:text="by Patrick McGuire a/k/a insideNothing"></TextView>
+			android:text="by insideNothing"></TextView>
 <TextView android:id="@+id/TextView03" 
 			android:layout_width="wrap_content"
 			android:layout_height="300sp" 

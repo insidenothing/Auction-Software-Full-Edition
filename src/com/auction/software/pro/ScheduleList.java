@@ -1,5 +1,6 @@
 package com.auction.software.pro;
 
+import insideNothing.auction.master.R;
 import java.util.Calendar;
 
 import android.app.Activity;

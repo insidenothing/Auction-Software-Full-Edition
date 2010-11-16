@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TabHost;
+import insideNothing.auction.master.R;
 
 
 public class AuctionContainer extends TabActivity {

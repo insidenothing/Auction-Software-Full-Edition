@@ -14,6 +14,7 @@ import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
+import insideNothing.auction.master.R;
 
 
     		public class ScheduleMap extends MapActivity implements LocationListener {

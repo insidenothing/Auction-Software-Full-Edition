@@ -29,8 +29,8 @@ public final class R {
         public static final int TextView02=0x7f060008;
         public static final int TextView03=0x7f060009;
         public static final int change_date=0x7f06000c;
+        public static final int edittext=0x7f060005;
         public static final int empty=0x7f060003;
-        public static final int label=0x7f060005;
         public static final int list=0x7f060002;
         public static final int main=0x7f060001;
         public static final int mapView=0x7f060004;

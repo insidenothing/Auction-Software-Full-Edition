@@ -23,6 +23,10 @@ public final class R {
         public static final int search_list_grey=0x7f020009;
     }
     public static final class id {
+        public static final int LinearLayout01=0x7f050006;
+        public static final int TextView01=0x7f050007;
+        public static final int TextView02=0x7f050009;
+        public static final int TextView03=0x7f050008;
         public static final int dateDisplay=0x7f050001;
         public static final int entry=0x7f050004;
         public static final int label=0x7f050003;
@@ -35,6 +39,7 @@ public final class R {
         public static final int list_item=0x7f030001;
         public static final int main=0x7f030002;
         public static final int search=0x7f030003;
+        public static final int splash=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f040000;

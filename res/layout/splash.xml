@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center" android:background="#6B8AAD">
+<TextView android:id="@+id/TextView01" 
+			android:layout_width="wrap_content"
+			android:layout_height="100sp" 
+			android:textSize="30sp"
+			android:textStyle="bold" 
+			android:textColor="#fff" 
+			android:gravity="center"
+			android:text="Auctions Lite"></TextView>
+<TextView android:id="@+id/TextView03" 
+			android:layout_width="wrap_content"
+			android:layout_height="135sp" 
+			android:textSize="10sp"
+			android:textStyle="bold" 
+			android:textColor="#fff" 
+			android:gravity="center"
+			android:text="Version 1.4"></TextView>
+<TextView android:id="@+id/TextView02" 
+			android:layout_width="wrap_content"
+			android:layout_height="180sp" 
+			android:textSize="13sp"
+			android:textStyle="bold" 
+			android:textColor="#fff" 
+			android:gravity="center"
+			android:text="insideNothing"></TextView>
+</RelativeLayout>

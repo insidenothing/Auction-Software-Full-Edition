@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
     <string name="app_name">Auction Master</string>
+    <string name="gps_error_text">GPS Currently Unavailable</string>
+    <string name="list_loading_text">Loading Schedule</string>
+    <string name="my_location">My Location</string>
 </resources>

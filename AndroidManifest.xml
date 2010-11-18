@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" 
 			package="insideNothing.auction.master" 
-			android:versionCode="3" 
-			android:versionName="1.2">
+			android:versionCode="4" 
+			android:versionName="1.3">
 	<application android:icon="@drawable/icon" 
 			android:label="@string/app_name" 
 			android:theme="@android:style/Theme.NoTitleBar">
 			<uses-library android:name="com.google.android.maps" />
-    <activity android:name="com.auction.software.pro.SplashScreenActivity" 
+    <activity android:name=".SplashScreenActivity" 
     		android:label="@string/app_name" 
     		android:theme="@android:style/Theme.NoTitleBar">
 		<intent-filter>
@@ -15,10 +15,10 @@
         	<category android:name="android.intent.category.LAUNCHER" />
 		</intent-filter>
 	</activity>
-	<activity android:name="com.auction.software.pro.AuctionContainer"></activity>	
-	<activity android:name="com.auction.software.pro.ScheduleList"></activity>
-	<activity android:name="com.auction.software.pro.ScheduleMap"></activity>
-	<activity android:name="com.auction.software.pro.ScheduleSearch"></activity>
+	<activity android:name=".AuctionContainer"></activity>	
+	<activity android:name=".ScheduleList"></activity>
+	<activity android:name=".ScheduleMap"></activity>
+	<activity android:name=".ScheduleSearch"></activity>
 </application>
 <uses-sdk android:minSdkVersion="4" />
 <uses-permission android:name="android.permission.INTERNET"></uses-permission> 

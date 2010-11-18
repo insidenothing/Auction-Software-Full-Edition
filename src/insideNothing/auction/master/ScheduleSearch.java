@@ -1,4 +1,4 @@
-package com.auction.software.pro;
+package insideNothing.auction.master;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ import insideNothing.auction.master.R;
 	    @Override
 		public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
-	        Log.i("patrick-code", "Loaded Search Tab");
+	        Log.d("insideNothing.ScheduleSearch", "Loaded Search Tab");
 	       // TextView textview = new TextView(this);
 	       // textview.setText("Search will be included in the next version release. Working on it every night.");
 	       // setContentView(textview);
@@ -38,7 +38,7 @@ import insideNothing.auction.master.R;
 		            if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
 		                (keyCode == KeyEvent.KEYCODE_ENTER)) {
 		              // Perform action on key press
-		              Toast.makeText(ScheduleSearch.this, edittext.getText(), Toast.LENGTH_SHORT).show();
+		              Toast.makeText(ScheduleSearch.this, "Searching database for "+edittext.getText(), Toast.LENGTH_SHORT).show();
 		              updateWeb(edittext.getText());
 		              return true;
 		            }
@@ -49,7 +49,7 @@ import insideNothing.auction.master.R;
 	    }
 	    
 	    private void updateWeb(Editable editable) {
-	 	   Log.i("patrick-debug", "run web query. q:"+editable); 
+	 	   Log.d("insideNothing.ScheduleSearch", "run web query. q:"+editable); 
 	        WebView mWebView;
 	        mWebView = (WebView) findViewById(R.id.webview);
 	    	mWebView.getSettings().setJavaScriptEnabled(true);

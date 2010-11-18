@@ -1,4 +1,4 @@
-package com.auction.software.pro;
+package insideNothing.auction.master;
 
 import insideNothing.auction.master.R;
 import java.util.Calendar;
@@ -13,6 +13,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.DatePicker;
+import android.widget.Toast;
 
 
 public class ScheduleList extends Activity {
@@ -41,7 +42,9 @@ public class ScheduleList extends Activity {
      }        
         
    private void updateWeb(int mMonth,int mDay,int mYear) {
-	   Log.i("patrick-debug", "run web display update code. month:"+mMonth+" day:"+mDay+" year:"+mYear); 
+	   Toast.makeText(ScheduleList.this, R.string.list_loading_text,
+               Toast.LENGTH_LONG).show();
+	   Log.d("insideNothing.ScheduleList", "run web display update code. month:"+mMonth+" day:"+mDay+" year:"+mYear); 
        WebView mWebView;
        //setContentView(R.layout.date_list);
        mWebView = (WebView) findViewById(R.id.webview);
@@ -86,9 +89,9 @@ public class ScheduleList extends Activity {
     	     if (item.hasSubMenu() == false)
     	     {
     	  
-    	    	 Log.i("patrick-debug", "Menu Command: "+item.getTitle());
+    	    	 Log.d("insideNothing.ScheduleList", "Menu Command: "+item.getTitle());
     	    	 if (item.getTitle().equals("Change date"))
-    	    		Log.i("patrick-debug", "process date change.");	 
+    	    		Log.d("insideNothing.ScheduleList", "process date change.");	 
     	    	    showDialog(DATE_DIALOG_ID);
     	         }
     	    	 	   

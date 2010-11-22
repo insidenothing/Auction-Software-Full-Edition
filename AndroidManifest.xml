@@ -15,12 +15,16 @@
         	<category android:name="android.intent.category.LAUNCHER" />
 		</intent-filter>
 	</activity>
+	<activity android:name=".XmlHandler"></activity>	
+	<activity android:name=".Xml2sql"></activity>	
 	<activity android:name=".AuctionContainer"></activity>	
 	<activity android:name=".ScheduleList"></activity>
 	<activity android:name=".ScheduleMap"></activity>
 	<activity android:name=".ScheduleSearch"></activity>
+	<activity android:name=".Activity2"></activity>
 </application>
 <uses-sdk android:minSdkVersion="4" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 <uses-permission android:name="android.permission.INTERNET"></uses-permission> 
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission> 
 <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission> 

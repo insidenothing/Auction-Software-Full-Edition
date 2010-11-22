@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:padding="10dp"
-    android:textSize="20sp" >
-</TextView>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:padding="6px"
+	android:layout_height="67px" android:id="@+id/rlt_main"
+	android:background="#000000">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/tv_name"
+		android:text="Name" android:layout_centerVertical="true"></TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Description"
+		android:id="@+id/tv_description" android:layout_centerVertical="true"
+		android:layout_toRightOf="@+id/tv_name" android:layout_marginLeft="10px"></TextView>
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_centerVertical="true"
+		android:id="@+id/iv_forward" android:background="@drawable/forward_arrow"
+		android:layout_alignParentRight="true"></ImageView>
+</RelativeLayout>
